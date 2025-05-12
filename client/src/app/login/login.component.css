@@ -1,0 +1,89 @@
+.wrap-login {
+    height: 100vh;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    width: 420px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+mat-card {
+    box-shadow: none !important;
+    border: none !important;
+    width: 100%;
+}
+
+mat-card-header img {
+    width: 120px;
+    height: auto;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+mat-card-content {
+    width: 100%;
+}
+
+mat-form-field {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.mat-mdc-form-field-infix {
+    background: #f3f3f3;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+
+input.mat-input-element {
+    font-size: 16px;
+    padding: 12px;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+}
+
+.mat-mdc-form-field-error {
+    font-size: 12px;
+    color: #d32f2f !important;
+}
+
+mat-label {
+    font-weight: 500;
+    color: #0275d8;
+}
+
+button[mat-raised-button] {
+    background-color: #0275d8;
+    color: #fff;
+    width: 100%;
+    padding: 12px 0;
+    font-weight: 600;
+    border-radius: 8px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
+}
+
+button[mat-raised-button]:hover {
+    background-color: #025bb5;
+}

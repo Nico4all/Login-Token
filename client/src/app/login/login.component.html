@@ -1,0 +1,41 @@
+<div class="wrap-login">
+
+  <div class="container">
+
+    <form class="" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+      <mat-card class="login-box">
+
+        <mat-card-header>
+          <img mat-card-avatar [src]="logoUrl" alt="Logo">
+        </mat-card-header>
+
+        <mat-card-content>
+          
+          <mat-form-field appearance="outline">
+            <mat-label>Correo</mat-label>
+            <input matInput type="email" placeholder="Ingrese su correo" formControlName="email" required class="form-field">
+            <mat-error *ngIf="loginForm.get('email')?.hasError('required')">Correo requerido</mat-error>
+            <mat-error *ngIf="loginForm.get('email')?.hasError('email')">Correo invalido</mat-error>
+          </mat-form-field>
+                
+          <mat-form-field appearance="outline">
+            <mat-label>Contraseña</mat-label>
+            <input matInput type="password" placeholder="Ingrese su contraseña" formControlName="password" required class="form-field">
+            <mat-error *ngIf="loginForm.get('password')?.hasError('required')">Contraseña requerida</mat-error>
+            <mat-error *ngIf="loginForm.get('password')?.hasError('minlength')">LA contraseña debe tener almenos 6 caracteres</mat-error>
+          </mat-form-field>
+
+        </mat-card-content>
+        
+        <mat-card-actions>
+          <button mat-raised-button color="primary">Acceder</button>
+        </mat-card-actions>
+
+      </mat-card>
+      
+    </form>
+
+  </div>
+
+</div>
