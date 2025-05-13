@@ -6,11 +6,11 @@ module.exports = {
     port: process.env.PORT || 3000,
   },
   jwt: {
-    secret: process.env.JWT_SECRET || "palabra clave",
+    secret: process.env.JWT_SECRET || "palabraclave",
     expireIn: process.env.JWT_EXPIRE_IN || "1h",
   },
   mysql: {
-    host: process.env.MYSQL_HOST || "localhost",
+    host: process.env.MYSQL_HOST || "127.0.0.1",
     user: process.env.MYSQL_USER || "root",
     password: process.env.MYSQL_PASSWORD || "docker",
     database: process.env.MYSQL_DB || "cecep_parcial_enfasis",
